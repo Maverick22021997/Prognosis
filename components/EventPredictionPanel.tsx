@@ -506,8 +506,8 @@ export default function EventPredictionPanel({
               : noOdds
           }
           currentBalance={
-            balanceGp
-          }
+  balanceGp ?? 0
+}
           onClose={() =>
             setSelectedSide(
               null

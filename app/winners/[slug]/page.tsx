@@ -164,13 +164,13 @@ export default function FinishedSeasonPage() {
         );
 
       const foundSeason =
-        seasons.find(
-          (
-            item
-          ) =>
-            item.slug ===
-            slug
-        );
+  seasons.find(
+    (
+      item: FinishedSeason
+    ) =>
+      item.slug ===
+      slug
+  );
 
       if (
         !foundSeason

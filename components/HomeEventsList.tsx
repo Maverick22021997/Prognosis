@@ -38,7 +38,9 @@ export default function HomeEventsList({
         <EventCard
           key={event.id}
           event={event}
-          currentBalance={balanceGp}
+          currentBalance={
+  balanceGp ?? 0
+}
           onPredictionSuccess={
             handlePredictionSuccess
           }

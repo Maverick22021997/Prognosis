@@ -145,9 +145,9 @@ export default function ArchivePage() {
       const archiveRows =
         await Promise.all(
           finishedSeasons.map(
-            async (
-              season
-            ) => {
+  async (
+    season: FinishedSeason
+  ) => {
               const [
                 winnersResponse,
                 leaderboardResponse,
@@ -265,14 +265,14 @@ export default function ArchivePage() {
                 );
 
               const winner =
-                winners.find(
-                  (
-                    item
-                  ) =>
-                    item.place ===
-                    1
-                ) ??
-                null;
+  winners.find(
+    (
+      item: SeasonWinner
+    ) =>
+      item.place ===
+      1
+  ) ??
+  null;
 
               return {
                 ...season,
